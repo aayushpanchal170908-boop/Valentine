@@ -239,3 +239,17 @@ body {
   from { transform: rotate(-10deg); }
   to { transform: rotate(10deg); }
 }
+.book {
+  transform-origin: left center;
+  animation: bookOpen 1.2s ease forwards;
+}
+
+@keyframes bookOpen {
+  from {
+    transform: scaleX(0.85) rotateY(0deg);
+  }
+  to {
+    transform: scaleX(1) rotateY(-8deg);
+  }
+}
+
