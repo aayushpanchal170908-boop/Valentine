@@ -54,3 +54,4 @@ noBtn.addEventListener('click', () => {
 yesBtn.addEventListener('click', () => {
   document.getElementById('celebrate').classList.remove('hidden');
 });
+
