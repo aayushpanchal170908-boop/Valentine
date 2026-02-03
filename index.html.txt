@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Mandeep ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- DISCLAIMER PAGE -->
+  <div id="disclaimer-page" class="page active">
+    <div class="love-bg"></div>
+
+    <div class="disclaimer-box">
+      <p>
+        FOR MY CUTE LITTLE PRINCESS MANDEEP. I KNOW YOU HAD STRICTLY TOLD ME NOT TO ASK YOU
+        BUT SORRY I COULD NOT RESIST MYSELF. I HAVE SPEND HOURS ON THIS WORK SO PLEASE
+        DON'T IGNORE THIS. TO CONTINUE TO THE NEXT PAGE PLEASE ENTER CONFIRM...
+      </p>
+    </div>
+
+    <button id="confirmBtn">CONFIRM</button>
+  </div>
+
+  <!-- BOOK PAGE (NEXT STAGE PLACEHOLDER) -->
+  <div id="book-page" class="page">
+    <h1 style="color:#3b1f0f;">BOOK PAGE LOADING…</h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- BOOK PAGE -->
+<div id="book-page" class="page">
+  <div class="book">
+    <div class="label">
+      LOVE LIFE
+    </div>
+  </div>
+
+  <button id="nextBtn">NEXT &gt;</button>
+</div>
+<!-- BOOK PAGE -->
+<div id="book-page" class="page">
+  <div class="book open">
+    <div class="page-center"></div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards hidden" id="cards">
+    <div class="card image-card">
+      <img src="mandeep_eyes.png" alt="Her Eyes">
+    </div>
+
+    <div class="card note-card">
+      <p>
+        Ye vo khoobsoorat aakhe hain jinme mai ye duniya dekhna chahhata hun,
+        ye vo aakhe hai jinme mai khona chahhata hun,
+        mai phele se tha tera ab thoda or hona chahhata hun
+      </p>
+      <button id="cardNextBtn">NEXT &gt;</button>
+    </div>
+  </div>
+</div>
+<!-- SINGLE NOTE CARD -->
+<div id="single-note" class="single-note hidden">
+  <p>
+    Heyy.. cutuuu I know yrr aap k parents strict hain aap ki family vaale strict hain
+    but trust me hum agar unko manaaenge to vo maan jaaenge or agar aapko dur lagega
+    batane me no problem mai akela convince krne ko bhee tyaar hun bus es baar mana
+    mt krna tu jo bolegi mai vo krunga. I will be your green forest
+  </p>
+  <button id="singleNext">NEXT &gt;</button>
+</div>
+<!-- PROPOSAL PAGE -->
+<div id="proposal-page" class="page">
+  <h1 class="proposal-title">Valentine Proposal ❤️</h1>
+
+  <p class="proposal-text">
+    Mandeep mai aap se bilkul serious ho k pooch rha hun.
+    I haven't celebrated valentine day's even once so will you be my first valentine ?
+  </p>
+
+  <div class="buttons">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <div id="celebrate" class="hidden">
+    <h2>CONGRATULATIONS YOU ARE IN RELATIONSHIP WITH THE BEST , LOYAL , HANDSOME PERSON POSSIBLY CAN</h2>
+    <div class="penguin">🐧💃</div>
+  </div>
+</div>
+

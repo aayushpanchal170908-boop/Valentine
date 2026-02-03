@@ -1,0 +1,56 @@
+// Generate random LOVE letters in background
+const loveBg = document.querySelector('.love-bg');
+const letters = ['L', 'O', 'V', 'E'];
+
+for (let i = 0; i < 40; i++) {
+  const span = document.createElement('span');
+  span.innerText = letters[Math.floor(Math.random() * 4)];
+  span.style.top = Math.random() * 100 + '%';
+  span.style.left = Math.random() * 100 + '%';
+  loveBg.appendChild(span);
+}
+
+// Page switching
+const confirmBtn = document.getElementById('confirmBtn');
+confirmBtn.addEventListener('click', () => {
+  document.getElementById('disclaimer-page').classList.remove('active');
+  document.getElementById('book-page').classList.add('active');
+});
+const nextBtn = document.getElementById('nextBtn');
+
+nextBtn.addEventListener('click', () => {
+  alert("NEXT STAGE: BOOK OPENING + EYES CARD");
+});
+nextBtn.addEventListener('click', () => {
+  document.getElementById('cards').classList.remove('hidden');
+});
+
+const cardNextBtn = document.getElementById('cardNextBtn');
+
+cardNextBtn.addEventListener('click', () => {
+  document.getElementById('cards').classList.add('hidden');
+  alert("NEXT PAGE TURN COMING…");
+});
+cardNextBtn.addEventListener('click', () => {
+  document.getElementById('cards').classList.add('hidden');
+  document.getElementById('single-note').classList.remove('hidden');
+});
+
+document.getElementById('singleNext').addEventListener('click', () => {
+  document.getElementById('book-page').classList.remove('active');
+  document.getElementById('proposal-page').classList.add('active');
+});
+let noClicks = 0;
+const noBtn = document.getElementById('noBtn');
+const yesBtn = document.getElementById('yesBtn');
+
+noBtn.addEventListener('click', () => {
+  noClicks++;
+  if (noClicks === 1) noBtn.style.transform = "translateX(80px)";
+  if (noClicks === 2) noBtn.style.transform = "translateY(80px)";
+  if (noClicks >= 5) noBtn.style.display = "none";
+});
+
+yesBtn.addEventListener('click', () => {
+  document.getElementById('celebrate').classList.remove('hidden');
+});
